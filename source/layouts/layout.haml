@@ -53,9 +53,9 @@
       = javascript_include_tag "polyfills"
     
     -# koko wa Typekit -- replace VVVVVVV with the proper kit code
-    / %script{ type: "text/javascript", src: "//use.typekit.net/VVVVVVV.js" }
-    / :javascript
-    /   try{Typekit.load();}catch(e){}
+    %script{ type: "text/javascript", src: "//use.typekit.net/VVVVVVV.js" }
+    :javascript
+      try{Typekit.load();}catch(e){}
   
   
   
