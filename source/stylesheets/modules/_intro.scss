@@ -1,3 +1,20 @@
 .m-intro {
+  margin: auto;
   background: $dark-gray image-url("cycle-bg.jpg") no-repeat;
+  color: $white;
+  padding-bottom: 4em;
+  
+  .intro-logo {
+    padding-bottom: 4em;
+    img {
+      width: 10em;
+    }
+  }
+  
+  .intro-callout {    
+    h3  {
+      font-weight: 900;
+      font-size: 4em;
+    }
+  }
 }

@@ -1,0 +1,10 @@
+.m-about {
+  background: $orange;
+  padding: 2em 0;
+  
+  .about-overview {
+    @include media($breakpoint-ipad){
+      @include span-columns(6 of 12);
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.m-details {
+  background: $teal;
+  padding: 2em 0;
+  
+  .details-rules {
+    @include media($breakpoint-ipad) {
+      @include span-columns(6 of 12);
+    }
+  }
+}

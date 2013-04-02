@@ -1,0 +1,11 @@
+.m-start {
+  background: $green;
+  padding: 2em 0;
+  
+  .start-steps li {
+    @include media($breakpoint-ipad){
+      @include span-columns(4 of 12);
+      @include omega(3n);
+    }
+  }
+}

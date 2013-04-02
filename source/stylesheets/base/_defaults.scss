@@ -2,6 +2,8 @@
 body {
   font-family: $typeface-sans;
   text-shadow: 1px 1px 1px transparent;
+  color: $white;
+  font-size: 112.5%;
 }
 
 a {
@@ -14,17 +16,29 @@ p, a, h1, h2, h3, h4, h5, label {
 
 h1, h2, h3 {
   font-family: $typeface-serif;
+  line-height: 1em;
+  margin-bottom: 0.5em;
+
 }
 
-h1 {}
+h1 {
+  font-weight: 900;
+}
 
-h2 {}
+h2 {
+  font-size: 1.375em;
+  margin-bottom: 0.5em;
+}
 
 h3 {
   font-weight: 900;
 }
 
-h4 {}
+h4 {
+  margin: 0.5em 0;
+  line-height: 1em;
+  font-weight: 400;
+}
 
 h5 {}
 
