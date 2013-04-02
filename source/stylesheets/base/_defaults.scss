@@ -12,11 +12,17 @@ p, a, h1, h2, h3, h4, h5, label {
   font-family: inherit;
 }
 
+h1, h2, h3 {
+  font-family: $typeface-serif;
+}
+
 h1 {}
 
 h2 {}
 
-h3 {}
+h3 {
+  font-weight: 900;
+}
 
 h4 {}
 
