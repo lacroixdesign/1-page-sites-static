@@ -2,6 +2,18 @@
   background: $teal;
   padding: 2em 0;
   
+  .details-rules ul{
+    margin-left: 0;
+    list-style: none;
+  }
+  .details-rules li {
+    padding-bottom: 0.5em;
+    border-bottom: 1px dashed $white;
+  }
+  .details-rules li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
   .details-rules {
     @include media($breakpoint-ipad) {
       @include span-columns(6 of 12);
