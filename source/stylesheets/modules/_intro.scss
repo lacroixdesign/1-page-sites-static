@@ -1,7 +1,7 @@
 .m-intro {
   padding-bottom: 4em;
   background: $dark-gray image-url("cycle-bg-light.jpg") no-repeat center center;
-  background-size: cover;
+  @include background-size(cover);
   color: $white;
   
   .intro-logo {
