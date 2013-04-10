@@ -3,8 +3,9 @@
   padding: 2em 0;
   
   .about-overview {
-    @include media($breakpoint-ipad){
-      @include span-columns(6 of 12);
+    @include media-ie($breakpoint-ipad) {
+      @include span-columns(6);
     }
   }
+  
 }

@@ -4,6 +4,10 @@ body {
   text-shadow: 1px 1px 1px transparent;
   color: $white;
   font-size: 112.5%;
+
+  @include media-ie {
+    min-width: $breakpoint-desktop;
+  }
 }
 
 a {

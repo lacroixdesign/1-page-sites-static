@@ -61,33 +61,12 @@
   
   
   %body
-    /[if lt IE 9]
-      .wrap.outdated-browser
-        %div
-          %p
-            %a.close{ href: "#" } x
-            You are using an <strong>outdated</strong> browser. Please 
-            %a{ href: "http://browsehappy.com/", target: '_blank' } upgrade your browser or
-            %a{ href: "http://www.google.com/chromeframe/?redirect=true", target: '_blank' } activate Google Chrome Frame
-            to improve your experience.
-
-
-    %header#l-header
-      
-      
     = yield
     
     
-    %footer#l-footer
-    
-    
-    
 
     
-    
-    
-    
-    -# koko wa javascript
+    -# koko wa javascripts
     = javascript_include_tag "application"
     
     
