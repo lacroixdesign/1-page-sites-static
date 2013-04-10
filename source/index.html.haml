@@ -70,17 +70,17 @@
     .studio-description
       %p Our studio was created to help businesses achieve their goals. For businesses both large and small, a website is an investment and it should yield your business a greater return on that investment. We don't just want to give you a spot on the web, we ultimately want to create the right site that helps to make your business grow. Since 2005, we have closely worked with our clients to learn about what they do so that we can create products that successfully engage and communicate with their audience effectively.
       %h5= link_to "Take a look at what we do.", "http://www.lacroixdesign.net/portfolio", target: "_blank"
-    .studio-team
-      .team-member
-        .avatar= image_tag "james.jpg"
-        .info
-          %h6= link_to "James LaCroix", "http://www.lacroixdesign.net/team/james-lacroix", target: "_blank"
-          %h6.title Designer &amp; Founder
-      .team-member
-        .avatar= image_tag "michael.jpg"
-        .info
-          %h6= link_to "Michael LaCroix", "http://www.lacroixdesign.net/team/michael-lacroix", target: "_blank"
-          %h6.title Developer
+    .l-studio-team
+      .m-team-member
+        .team-member-avatar= image_tag "james.jpg"
+        .team-member-info
+          %h6= link_to "James LaCroix", "http://www.lacroixdesign.net/team", target: "_blank"
+          %h6.team-member-title Designer &amp; Founder
+      .m-team-member
+        .team-member-avatar= image_tag "michael.jpg"
+        .team-member-info
+          %h6= link_to "Michael LaCroix", "http://www.lacroixdesign.net/team", target: "_blank"
+          %h6.team-member-title Developer
       
 -# Get Started
 %section#start.m-start
@@ -97,16 +97,10 @@
 -# Sign Up
 %section.m-signup
   .l-constrained
-    %p Looking to get the most out of your site? Sign up for our bi-weekly newsletter offering examples and advice to make your next site a success. 
-    #mc_embed_signup
-      %form#mc-embedded-subscribe-form.validate{:action => "http://lacroixdesign.us2.list-manage1.com/subscribe/post?u=cb74d792445887e99b0a36575&id=cbb225b6bd", :method => "post", :name => "mc-embedded-subscribe-form", :novalidate => "", :target => "_blank"}
-        .mc-field-group
-          %input#mce-EMAIL.required.email{:name => "EMAIL", :type => "email", :onclick=>"this.value = ''", :value => "Your Email Address"}/
-        #mce-responses.clear
-          #mce-error-response.response{:style => "display:none"}
-          #mce-success-response.response{:style => "display:none"}
-        .clear
-          %input#mc-embedded-subscribe.button{:name => "subscribe", :type => "submit", :value => "Subscribe"}/
+    %form{ action: "http://lacroixdesign.us2.list-manage1.com/subscribe/post?u=cb74d792445887e99b0a36575&id=cbb225b6bd", method: "post", name: "" }
+      %p Looking to get the most out of your site? Sign up for our bi-weekly newsletter offering examples and advice to make your next site a success. 
+      %input{ name: "email", type: "email", placeholder: "Your Email Address" }
+      %button.btn-light-grey Subscribe
 
 
 -# Footer      
