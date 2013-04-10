@@ -2,6 +2,21 @@
 %section.m-intro(data-resize="1100")
   .l-constrained
     .intro-logo= image_tag "logo.png"
+    .navigation
+      %ul.social
+        %li
+          %a{ href: 'https://twitter.com/lacroixdesign', target: '_blank' }
+            / %i{ :'data-icon' => raw("&#xe004") }
+        %li
+          %a{ href: 'http://www.facebook.com/lacroixdesign', target: '_blank' }
+            / %i{ :'data-icon' => raw("&#xe005") }
+        %li
+          %a{ href: 'https://plus.google.com/117142158577597624459', rel: 'publisher', target: '_blank' }
+            / %i{ :'data-icon' => raw("&#xe006") }
+        %li
+          / = mail_to 'info@lacroixdesign.net', raw('<i data-icon="&#xe000"></i>'), encode: 'hex'
+
+    
     .intro-callout
       %h1 Get Your Business Moving
       %h4 With a brand new responsive website launched in 3 weeks for $3000.
@@ -32,7 +47,7 @@
       %p In today's competitive market, your website is a crucial channel for reaching your audience. Through our design process, we will work with you to get a fantastic website online quickly.
     .features-item
       %h2 Custom Design
-      %p Your business is unique so your website should be as well. Each site will be designed specifically for your brand and content. 
+      %p Your business is unique so your website should be as well. Each site will be designed specifically for your brand and content. You won't be receiving a template, it will be a brand new site.
     .features-item
       %h2 Great On Every Device
       %p Your site will look great on any size screen. Using responsive web design, we will create a website that responds and adapts to the browser size to create a great experience on every device. 
@@ -44,22 +59,35 @@
     .details-rules
       %h1 What You Will Receive
       %ul
-        %li You will receive an an eye catching responsive website with static content designed to market your product, service, location or event. 
+        %li In three weeks, you will have an eye catching site with static content designed to market your product, service, location or event. 
+        %li Your site will be an original design created to best represent your brand and deliver your content to your audience.
+        %li The new site will be responsive, meaning that it will respond and adapt to the size of the browser making sure that your content looks as great on a phone or tablet as it does on a desktop or laptop.
+        %li The opportunity to work with an experienced design studio created to help businesses grow. 
+        %li Once the site is launched, we will provide up to one hour of time for any minor edits to the content on your site. 
     .details-rules
       %h1 What You Won't Receive
       %ul
         %li Copywriting, custom photography and branding elements are not included. However, we do offer these services and would love to partner with you to create them but it will affect cost and timeline.
         %li Site will be composed of static content and therefore, there will not be a content management system. If you would require on, we are well versed in creating these solutions. We could quote out this project for you if needed. 
         %li Hosting is not included. We offer very affordable hosting packages or, we can recommend a solution for you and handle the installation of the site. 
-        %li Domain Registration is not included, therefore
+        %li Domain Registration is not included. Therefore, you will need to register yours with the registry of your choice or we could recommend one. 
                 
 
 -# Why Us
 %section.m-studio
   .l-constrained
     %h1 Why You Should Hire Us
-    
-
+    %p For businesses both large and small, a website is an investment and it should yield your business a greater return on that investment. 
+    .lacroix-logo= image_tag "lacroix-logo.png"
+    .team-member
+      .avatar= image_tag "james.jpg"
+      %h5= link_to "James LaCroix", "http://www.lacroixdesign.net/team/james-lacroix", target: "_blank"
+      %h5.title Designer &amp; Founder
+    .team-member
+      .avatar= image_tag "michael.jpg"
+      %h5= link_to "Michael LaCroix", "http://www.lacroixdesign.net/team/michael-lacroix", target: "_blank"
+      %h5.title Developer
+      
 -# Get Started
 %section#start.m-start
   .l-constrained
@@ -71,6 +99,20 @@
       %li.old-ie-alpha Once accepted, we will work with you to finalize content for the site.
       %li We will build a live working prototype of your site. 
       %li Once finalized, we will get your site live. 
+      
+-# Sign Up
+%section.m-signup
+  .l-constrained
+    %p Looking to get the most out of your site? Sign up for our bi-weekly newsletter offering examples and advice to make your next site a success. 
+    #mc_embed_signup
+      %form#mc-embedded-subscribe-form.validate{:action => "http://lacroixdesign.us2.list-manage1.com/subscribe/post?u=cb74d792445887e99b0a36575&id=cbb225b6bd", :method => "post", :name => "mc-embedded-subscribe-form", :novalidate => "", :target => "_blank"}
+        .mc-field-group
+          %input#mce-EMAIL.required.email{:name => "EMAIL", :type => "email", :onclick=>"this.value = ''", :value => "Your Email Address"}/
+        #mce-responses.clear
+          #mce-error-response.response{:style => "display:none"}
+          #mce-success-response.response{:style => "display:none"}
+        .clear
+          %input#mc-embedded-subscribe.button{:name => "subscribe", :type => "submit", :value => "Subscribe"}/
 
 
 -# Footer      
