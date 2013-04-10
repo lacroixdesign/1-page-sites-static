@@ -1,4 +1,56 @@
 .m-studio {
   background: $navy;
   padding: 2em 0;
+  
+  a, a:visited {
+    color: $yellow;
+  } 
+  
+  a:hover {
+    color: lighten($yellow, 15%)
+  }
+  
+  a:active {
+    color: darken($yellow, 15%)
+  }
+  
+  h5 {
+    font-family: $typeface-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.5em;
+  }
+  
+  .info { 
+    margin: 2em 1em;
+    h6 {
+      font-family: $typeface-serif;
+      font-weight: 400;
+      font-size: 1em;
+    }
+    .title {
+        font-style: italic;
+        font-size: 0.625em;
+      }
+  }
+
+   
+  .studio-description {
+    @include media-ie($breakpoint-ipad) {
+      @include span-columns(6);
+    }
+  }
+  .team-member {
+    @include media-ie($breakpoint-ipad) {
+      @include span-columns(6);
+    }
+
+    .avatar img{
+      border-radius: 500px;
+      width: 6em;
+      @include media-ie($breakpoint-ipad) {
+        @include span-columns(3);
+      }
+    }
+  }
 }
