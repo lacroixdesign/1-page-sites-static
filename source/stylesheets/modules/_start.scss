@@ -4,36 +4,47 @@
   
   .start-steps {
     counter-reset: getting-started-steps;
+    list-style: none;
     margin-left: 0;
-  }
-
-  .start-steps li:before {
-    content: counter(getting-started-steps);
-    counter-increment: getting-started-steps;
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-family: $typeface-serif;
-    font-size: 2.75em;
-    font-weight: 400;
   }
 
   .start-steps li {
     position: relative;
+    min-height: 3em;
     padding-top: 0.5em;
     padding-left: 2em;
-  }
+    margin-bottom: 1em;
 
-  .start-steps li {
-    @include media($breakpoint-ipad) {
+    &:before {
+      content: counter(getting-started-steps);
+      counter-increment: getting-started-steps;
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-family: $typeface-serif;
+      font-size: 2.75em;
+      font-weight: 400;
+    }
+
+    @include media(min-width $breakpoint-ipad max-width ($breakpoint-desktop - 1)) {
       @include span-columns(6);
-      @include omega;
+      @include omega(2n);
     }
 
-    @include media-ie($breakpoint-desktop) {
+    @include media($breakpoint-desktop) {
       @include span-columns(4);
-      @include omega;
+      @include omega(3n);
     }
+
+    @include media-ie {
+      float: left;
+      width: 33.333%;
+
+      &.old-ie-alpha {
+        clear: left;
+      }
+    }
+
   }
 
 }
