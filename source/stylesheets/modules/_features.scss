@@ -5,6 +5,7 @@
 
   .features-tagline {
     margin-top: 12em;
+    margin-bottom: 1em;
       
     h5 {
       margin-bottom: 0.5em;
@@ -17,6 +18,7 @@
 
     @include media-ie($breakpoint-ipad) {
       @include span-columns(6);
+      margin-bottom: 0;
     }
   }
   
