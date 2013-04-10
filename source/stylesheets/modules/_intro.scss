@@ -1,27 +1,37 @@
 .m-intro {
-  margin: auto;
-  background: $dark-gray image-url("cycle-bg.jpg") no-repeat center center;
+  padding-bottom: 4em;
+  background: $dark-gray image-url("cycle-bg-light.jpg") no-repeat center center;
   background-size: cover;
   color: $white;
-  padding-bottom: 4em;
   
   .intro-logo {
-    padding-bottom: 4em;
+    width: 8em;
+    margin-bottom: 4em;
 
     img {
+      width: 100%;
+    }
+
+    @include media-ie($breakpoint-ipad) {
       width: 10em;
     }
+
   }
   
-  .intro-callout {    
+  .intro-callout {
     h1 {
-      font-weight: 900;
       font-size: 3em;
+      font-weight: 900;
 
       @include media-ie($breakpoint-ipad) {
         font-size: 4em;
       }
     }
+
+    h4 {
+      margin-bottom: 2em;
+    }
+
   }
 
 }

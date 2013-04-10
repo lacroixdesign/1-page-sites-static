@@ -4,6 +4,7 @@
 
 // Mixins
 @import "mixins/ie";
+@import "mixins/buttons";
 
 // Base
 @import "base/settings";
@@ -24,5 +25,6 @@
 @import "modules/studio";
 @import "modules/start";
 @import "modules/footer";
+@import "modules/buttons";
 
 // States
