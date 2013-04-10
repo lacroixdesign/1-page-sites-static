@@ -1,0 +1,1 @@
+(function(){$(window).on("resize",function(e){return $("[data-resize]").each(function(){var e,t,n,r;return e=$(this),r=e.data("resize"),t=$(window).width(),n=t>=r?$(window).height()-10:"",e.css("min-height",n)})}),jQuery(function(){return $(window).trigger("resize")})}).call(this);
