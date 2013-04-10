@@ -14,9 +14,13 @@
   }
   
   .intro-callout {    
-    h3 {
+    h1 {
       font-weight: 900;
-      font-size: 4em;
+      font-size: 3em;
+
+      @include media-ie($breakpoint-ipad) {
+        font-size: 4em;
+      }
     }
   }
 
