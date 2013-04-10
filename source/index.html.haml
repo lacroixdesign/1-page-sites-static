@@ -4,17 +4,10 @@
     .intro-logo= image_tag "logo.png"
     .navigation
       %ul.social
-        %li
-          %a{ href: 'https://twitter.com/1pagesites', target: '_blank' }
-            / %i{ :'data-icon' => raw("&#xe004") }
-        %li
-          %a{ href: 'https://www.facebook.com/1PageSites', target: '_blank' }
-            / %i{ :'data-icon' => raw("&#xe005") }
-        %li
-          %a{ href: 'https://plus.google.com/b/100269766489074847704', rel: 'publisher', target: '_blank' }
-            / %i{ :'data-icon' => raw("&#xe006") }
-        %li
-          / = mail_to 'info@lacroixdesign.net', raw('<i data-icon="&#xe000"></i>'), encode: 'hex'
+        %li= link_to icon("e000"), "https://twitter.com/1pagesites", target: "_blank"
+        %li= link_to icon("e001"), "https://www.facebook.com/1PageSites", target: "_blank"
+        %li= link_to icon("e002"), "https://plus.google.com/b/100269766489074847704", rel: "publisher", target: "_blank"
+        %li= mail_to "hello@1pagesites.net", icon("e003")
 
     
     .intro-callout
