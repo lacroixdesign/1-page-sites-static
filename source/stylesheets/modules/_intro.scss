@@ -1,6 +1,6 @@
 .m-intro {
   padding-bottom: 4em;
-  background: $dark-gray image-url("cycle-bg-light.jpg") no-repeat center center;
+  background: $dark-gray image-url("cycle-bg.jpg") no-repeat center center;
   @include background-size(cover);
   color: $white;
 
@@ -10,15 +10,16 @@
   
   .intro-logo {
     float: left;
-    width: 6em;
-    margin-bottom: 4em;
+    width: 4em;
+    margin: 1em 0 2em 0;
 
     img {
       width: 100%;
     }
 
     @include media-ie($breakpoint-ipad) {
-      width: 10em;
+      width: 8em;
+      margin-bottom: 6em;
     }
 
   }
@@ -27,7 +28,7 @@
     @include unstyled-list;
     float: right;
     margin: 0.5em 0;
-    font-size: 1.5em;
+    font-size: 1em;
 
     li {
       display: inline-block;
@@ -39,6 +40,7 @@
   
   .intro-callout {
     h1 {
+      margin-bottom: 0;
       font-size: 3em;
       font-weight: 900;
 
