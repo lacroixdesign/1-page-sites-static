@@ -31,6 +31,14 @@
     small { 
       display: block;  
       text-align: center;
+      
+      a:hover {
+        color: $orange;
+      }
+      
+      a:active {
+        color: darken($orange, 10%)
+      }
     }
 
     @include media-ie($breakpoint-ipad) {
