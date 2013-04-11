@@ -3,9 +3,14 @@
   background: $dark-gray image-url("cycle-bg-light.jpg") no-repeat center center;
   @include background-size(cover);
   color: $white;
+
+  header {
+    @include clearfix;
+  }
   
   .intro-logo {
-    width: 8em;
+    float: left;
+    width: 6em;
     margin-bottom: 4em;
 
     img {
@@ -14,6 +19,20 @@
 
     @include media-ie($breakpoint-ipad) {
       width: 10em;
+    }
+
+  }
+
+  .intro-social {
+    @include unstyled-list;
+    float: right;
+    margin: 0.5em 0;
+    font-size: 1.5em;
+
+    li {
+      display: inline-block;
+      margin: 0 0 0 0.25em;
+      &:first-child { margin-left: 0; }
     }
 
   }
